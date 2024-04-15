@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+#HeroMenu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #F5F0EC;
+    backdrop-filter: blur(3px);
+    filter: blur(0px);
+    transition: 1s;
+}
+#HeroMenu li{
+    font-size: large;
+}
+#HeroTitle{
+    display: flex;
+    justify-content: center;
+}
+#HeroTitle a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroTitle *:hover{
+    color: #E89847;
+}
+#HeroTitle h1{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+}
+#HeroOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#HeroOptions a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroOptions * :hover{
+    color: #E89847;
+}
+#HeroOptions ul{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+}
+#HeroLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HeroLogin ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    margin: 0;
+}
+#HeroLogin ul li{
+    height: 100%;
+    margin: 0;
+}
+#HeroLogin a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroLogin * :hover{
+    color: #E89847;
+}
+#HeroCarrousel{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#HeroCarrousel img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#carouselExample{
+    padding: 0px;
+}

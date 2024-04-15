@@ -1,0 +1,79 @@
+#User-details{
+    display: flexbox;
+
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    height: calc(100vh - 100px);   
+}
+#User-details-Bar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;    
+}
+#User-details-Bar #profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 70px;
+}
+#User-details-Bar #profile p{
+    font-size: 2rem;
+    margin: 0;
+}
+#User-details-Bar #picture{
+    height: 250px;
+    min-height: 250px;
+    width: 250px;
+    min-width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.User-details-calification{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+.User-details-calification svg,path{
+    height: 30px;
+    width: 30px;
+    fill: yellow;
+}
+#User-details-Bar #picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#User-details-Bar #picture p{
+    width: 100%;
+    font-size: 500px;
+}
+#User-details-description{
+    margin-top: 10px;
+    width: 80%;
+    height: fit-content;
+}
+#User-details-Projects{
+    background-color: brown;
+    padding: 0;
+}
+#User-details-Projects .row{
+    background-color: steelblue;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#User-details-Projects .row #Projects-category{
+    background-color: aquamarine;
+    height: 100px;
+}
+
+#User-details-Projects .row {
+    background-color: black;
+}

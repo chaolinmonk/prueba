@@ -1,0 +1,63 @@
+#img-artwork{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+}
+#img-artwork img{
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    transition: .2s;
+}
+
+#details{
+    margin-bottom: 100px;
+    width: 100%;
+    height: fit-content;
+    
+}
+.interaccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 10px;
+}
+#artworkdetails{
+    margin-left: 50px;
+    padding: 50px;
+    background-color: #F5F0EC;
+}
+#artworkdetails p h2{
+    margin-bottom: 30px;
+}
+
+.cal{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:10px;
+}
+.cal p{
+    line-height: 40px;
+    margin: 0;
+}
+#buy-artwork svg path{
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+.svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+}
+
+.svg path:hover{
+    fill: black;
+}
