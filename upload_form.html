@@ -8,54 +8,44 @@
 
 </head>
 <body>
-    <div class="container w-70 mt-5 rounded shadow">
-        <div class="text-end"><img src="img/logo.png" alt="" width="30%" height="10%"></div>
-        <form action="" class="">
+    <div class="container w-75 mt-5 rounded shadow">
+        <div class="text-end"><img src="img/logo.png" alt="" width="20%" height="10%"></div>
+        <div class="container w-75 ">
+            <form action="" class="">
                 <div class="container col-12 w-50 ">
                     <label for="picture" class="form-label"></label>
                     <input type="file" class="form-control" name="picture">
                 </div>
-                <div class="col-6">
-                    <label for="lastname" class="form-label"></label>
-                    <input type="text" class="form-control input-clr" name="lastname" placeholder="Apellido">
+                <div class="row">
+                    <div class="col-7">
+                        <label for="artname" class="form-label"></label>
+                        <input type="text" class="form-control" name="artname" placeholder="Nombre del arte">
+                    </div>
+                    <div class="col-5">
+                        <label for="price" class="form-label"></label>
+                        <input type="text" value="$" class="form-control" name="price">
+                    </div>
                 </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="email" class="form-label"></label>
-                    <input type="email" class="form-control input clr" name="mail" placeholder="Correo Electronico">
+                <div>
+                    <label for="story" class="form-label"></label>
+                    <input type="text" id="typeNumber" class="form-control" name="story" placeholder="Historia">
                 </div>
-                <div class="col-6">
-                    <label for="typeNumber" class="form-label"></label>
-                    <input type="tel" id="typeNumber" class="form-control" name="phone" placeholder="Numero de telefono">
+                <div>
+                    <label for="desc" class="form-label"></label>
+                    <input type="text" class="form-control" name="desc" placeholder="descripción">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="country" class="form-label"></label>
-                    <input type="text" class="form-control" name="country" placeholder="Pais">
+                <div>
+                    <label for="Tec" class="form-label"></label>
+                    <input type="text" class="form-control input-clr" name="Tec" placeholder="Técnica Usada">
                 </div>
-                <div class="col-6">
-                    <label for="city" class="form-label"></label>
-                    <input type="text" class="form-control input-clr" name="city" placeholder="Ciudad">
+                <div>
+                    <label for="tag" class="form-label"></label>
+                    <input type="text" class="form-control" name="tag" placeholder="Etiquetas">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="address" class="form-label"></label>
-                    <input type="text" class="form-control" name="address" placeholder="direccion">
-                </div>
-                <div class="col-6">
-                    <label for="addressnum" class="form-label"></label>
-                    <input type="text" class="form-control input-clr" name="addressnum" placeholder="Numero / depto / block">
-                </div>
-            </div>
-            <div class="col-12">
-                <label for="comments" class="form-label"></label>
-                <input type="text" class="form-control" name="comments" placeholder="Comentarios">
-            </div>
-            <div class="text-center dm-2 py-4">
-                <button type="submit" class="btn btn-success">Subir</button>
-        </form>
+                <div class="text-center dm-2 py-4">
+                    <button type="submit" class="btn btn-success">Subir</button>
+            </form>
+        </div>
         
         </div>
     </div>
