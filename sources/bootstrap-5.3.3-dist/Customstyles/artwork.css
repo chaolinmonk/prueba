@@ -14,21 +14,25 @@
 }
 
 #details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 100px;
     width: 100%;
     height: fit-content;
-    
 }
 .interaccion{
     display: flex;
     flex-direction: column;
     align-items: center;   
     gap: 10px;
+    margin-bottom: 50px;
 }
 #artworkdetails{
-    margin-left: 50px;
+
     padding: 50px;
     background-color: #F5F0EC;
+    min-width: 500px;
 }
 #artworkdetails p h2{
     margin-bottom: 30px;
@@ -48,6 +52,9 @@
     object-fit: cover;
     height: 40px;
     width: 40px;
+}
+#buy-artwork{
+    min-width: 300px;
 }
 .svg{
     display: flex;
