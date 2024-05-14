@@ -1,0 +1,28 @@
+{
+    "users":[
+        {
+            "id":1,
+            "userName":"Eduloco",
+            "name":"Eduardo",
+            "lastName":"Bravo",
+            "userMail":"ed.bravod@duocuc.cl",
+            "passWord":"locopepe_69"
+        },
+        {
+            "id":2,
+            "userName":"chaolinmonk",
+            "name":"Diego",
+            "lastName":"Quioza",
+            "userMail":"diego.quiozagonzales@gmail.com",
+            "passWord":"locopepe_420"
+        },
+        {
+            "id":3,
+            "userName":"testUser",
+            "name":"test",
+            "lastName":"test",
+            "userMail":"test@tester.com",
+            "passWord":"tester"
+        }
+    ]
+}
