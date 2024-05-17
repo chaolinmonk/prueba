@@ -2,7 +2,6 @@
     "users":[
         {
             "id":1,
-            "userName":"Eduloco",
             "name":"Eduardo",
             "lastName":"Bravo",
             "userMail":"ed.bravod@duocuc.cl",
@@ -10,7 +9,6 @@
         },
         {
             "id":2,
-            "userName":"chaolinmonk",
             "name":"Diego",
             "lastName":"Quioza",
             "userMail":"diego.quiozagonzales@gmail.com",
@@ -18,7 +16,6 @@
         },
         {
             "id":3,
-            "userName":"testUser",
             "name":"test",
             "lastName":"test",
             "userMail":"test@tester.com",

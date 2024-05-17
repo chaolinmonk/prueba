@@ -1,38 +1,44 @@
 $().ready(function () {
-    //Login
+    if (localStorage.length === 0){
+        $.getJSON("auth/user.json", function(data){
+            localStorage.setItem("users", JSON.stringify(data.users))
+        });
+    }
+    const LOCALUSER = JSON.parse(localStorage.getItem("users"));
+    console.log(LOCALUSER);
 
+    //Login
     $('#login').submit(function () {
         event.preventDefault();
         var email = ($('#email').val()).toLowerCase();
         var pass = $('#password').val();
+        var logAuth = false;
         
-        $.getJSON("auth/user.json", function(data){
-            var logAuth = false;
-            data.users.forEach(users => {
-                if(users.userMail == email && users.passWord == pass) logAuth = true
-            });
-            console.log(logAuth ? "Sesion Iniciada" && window.location.replace("index.html") : "Datos incorrectos");
-        });
+        for (var i = 0; i < LOCALUSER.length; i++){
+            userMail = LOCALUSER[i]["userMail"];
+            passWord = LOCALUSER[i]["passWord"];
+
+            if(userMail === email && passWord === pass) logAuth = true;
+        }
+        
+        console.log(logAuth ? "Sesion Iniciada" : "Datos Incorrectos");
     });
 
     //Register
     $('#register').submit(function () {
         event.preventDefault();
-        var email = ($('#email').val()).toLowerCase();
-        var name = ($('#name').val()).toLowerCase();
-        var lastname = ($('#lastname').val()).toLowerCase();
-        var pass = $('#password').val();
-        var valPass = $('#valPass').val();
-        
-        console.log(email);
-        console.log(name); 
-        console.log(lastname);
-        console.log(pass);
-        console.log(valPass);
-        
-        if(pass === valPass){
-            
+        let newUser = {
+            name: ($('#name').val()).toLowerCase(),
+            lastName: ($('#lastname').val()).toLowerCase(),
+            userMail: ($('#email').val()).toLowerCase(),
+            passWord: $('#password').val(),
         }
         
+        let userList = JSON.parse(localStorage.getItem("users"));
+
+        userList.push(newUser);
+        localStorage.setItem("users",JSON.stringify(userList))
+        console.log("Cuenta Creada con Exito")
+
     });
 });
