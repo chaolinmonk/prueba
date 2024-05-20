@@ -1,17 +1,11 @@
 #ArtGalery {
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: fit-content;
     width: 100%;
     gap: 10px;
-=======
-    align-items: center;
-    height: 60vh;
-    width: 100%;
->>>>>>> v1.6
 }
 
 #Artgal-slider {
@@ -31,15 +25,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     height: 500px;
     width: 20vw;
     min-width: 400px;
-=======
-    height: 80%;
-    width: 20vw;
-    min-width: 300px;
->>>>>>> v1.6
     background-color: aquamarine;
     z-index: 1; 
 }
@@ -75,11 +63,7 @@
 }
 .artcontainer-bigtext {
     text-decoration: unset;
-<<<<<<< HEAD
     font-size: 2rem;
-=======
-    font-size: 20px;
->>>>>>> v1.6
     margin-left: 10px;
     margin-right: 10px;
     color: thistle;
@@ -95,7 +79,6 @@
     margin-bottom: 30px;
     margin-right: 10px;
 }
-<<<<<<< HEAD
 .Artsearch{
     display: flex;
     justify-content: center;
@@ -149,6 +132,3 @@
         grid-template-columns: repeat(1,1fr); 
     }
 }
-=======
-
->>>>>>> v1.6
