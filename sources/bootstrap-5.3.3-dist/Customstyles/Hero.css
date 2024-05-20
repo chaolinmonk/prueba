@@ -13,7 +13,11 @@
     z-index: 30;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     animation: IntroBg 2s ease-in-out 0s forwards;
+=======
+    animation: IntroBg 7s ease-in-out 0s forwards;
+>>>>>>> v1.6
 }
 #IntroTitulo{
     position: absolute;
@@ -24,7 +28,11 @@
     font-style: italic;
     width:var(-intro--width);
     font-size: 100px;
+<<<<<<< HEAD
     animation: IntroTitle 2s ease-in-out .2s forwards;
+=======
+    animation: IntroTitle 3s ease-in-out 2s forwards;
+>>>>>>> v1.6
 }
 #IntroTitulo span{
     color: #DA603E;
@@ -175,7 +183,11 @@
     position: absolute;
     z-index: -1;
     height: 100vh;
+<<<<<<< HEAD
     width: 110%;
+=======
+    width: 100vw;
+>>>>>>> v1.6
     overflow: hidden;
 }
 #HeroCarrousel img{

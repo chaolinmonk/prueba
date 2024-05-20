@@ -1,0 +1,48 @@
+{
+    "artwork":[
+        {
+            "id":1,
+            "artworkName":"La noche Estrellada",
+            "imageUrl":"la-noche-estrellada.jpg",
+            "precio":1599000,
+            "historia":"",
+            "descripcion":"La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. Pintado en junio de 1889",
+            "tecUsada":"pintura de aceite",
+            "etiquetas":"",
+            "artistaId":1
+        },
+        {
+            "id":2,
+            "artworkName":"La noche Estrellada",
+            "imageUrl":"la-noche-estrellada.jpg",
+            "precio":1599000,
+            "historia":"",
+            "descripcion":"La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. Pintado en junio de 1889",
+            "tecUsada":"pintura de aceite",
+            "etiquetas":"",
+            "artistaId":1
+        },
+        {
+            "id":3,
+            "artworkName":"La noche Estrellada",
+            "imageUrl":"la-noche-estrellada.jpg",
+            "precio":1599000,
+            "historia":"",
+            "descripcion":"La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. Pintado en junio de 1889",
+            "tecUsada":"pintura de aceite",
+            "etiquetas":"",
+            "artistaId":1
+        },
+        {
+            "id":4,
+            "artworkName":"La noche Estrellada",
+            "imageUrl":"la-noche-estrellada.jpg",
+            "precio":1599000,
+            "historia":"",
+            "descripcion":"La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. Pintado en junio de 1889",
+            "tecUsada":"pintura de aceite",
+            "etiquetas":"",
+            "artistaId":1
+        }
+    ]
+}
