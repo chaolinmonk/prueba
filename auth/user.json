@@ -1,25 +1,34 @@
 {
     "users":[
         {
-            "id":1,
+            "author_id":4,
             "name":"Eduardo",
             "lastName":"Bravo",
             "userMail":"ed.bravod@duocuc.cl",
-            "passWord":"locopepe_69"
-        },
+            "passWord":"locopepe_69",
+            "desc":"",
+            "img":"",
+            "link":""
+        }, 
         {
-            "id":2,
+            "author_id":5,
             "name":"Diego",
             "lastName":"Quioza",
             "userMail":"diego.quiozagonzales@gmail.com",
-            "passWord":"locopepe_420"
+            "passWord":"locopepe_420",
+            "desc":"",
+            "img":"",
+            "link":""
         },
         {
-            "id":3,
+            "author_id":6,
             "name":"test",
             "lastName":"test",
             "userMail":"test@tester.com",
-            "passWord":"tester123"
+            "passWord":"tester123",
+            "desc":"",
+            "img":"",
+            "link":""
         }
     ]
 }
