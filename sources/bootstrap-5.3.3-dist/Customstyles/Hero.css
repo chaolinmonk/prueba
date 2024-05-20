@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    -intro--width:420px;
+    -intro--height:360px;
+}
+*{
+    border: #DA603E solid 0px;
+}
+#Intro{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    animation: IntroBg 2s ease-in-out 0s forwards;
+}
+#IntroTitulo{
+    position: absolute;
+    bottom: -50%;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    width:var(-intro--width);
+    font-size: 100px;
+    animation: IntroTitle 2s ease-in-out .2s forwards;
+}
+#IntroTitulo span{
+    color: #DA603E;
+}
+@keyframes IntroBg {
+    0%{
+        background-color: black;
+    }
+    60%{
+        background-color: #F5F0EC;
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+        display: none;
+    }
+}
+@keyframes IntroTitle {
+    0%{
+        display: block;
+        bottom: -50%;
+    }
+    60%{
+        bottom: 50%;
+        opacity: 100%;
+    }
+    100%{
+        bottom: 50%;
+        opacity: 0%;
+    }
+}
+#Hero{
+    display: flex;
+    align-items: end;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden ;
+}
+.Hero-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right: 5%;
+    bottom: 140px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(12, 13, 14,.3);
+    color: #DA603E;
+    backdrop-filter: blur(2px);
+    animation: HEROARROWANIMATION 2s ease-in-out 7s infinite forwards;
+}
+@keyframes HEROARROWANIMATION {
+    0%{
+        bottom: 140px;
+    }
+    50%{
+        bottom: 120px;
+    }
+    100%{
+        bottom: 140px;
+    }
+}
+#Hero-arrow-icon{
+    width: 50%;
+    height: 50%;
+    fill: #DA603E;
+}
+#HeroMenu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: aliceblue;
+    background-image: linear-gradient(0deg, rgba(12, 13, 14,.5) 30%, rgba(10,11,40,0) 100%);
+    backdrop-filter: blur(3px);
+    filter: blur(0px);
+    transition: 1s;
+}
+#HeroMenu li{
+    font-size: large;
+}
+#HeroTitle{
+    display: flex;
+    justify-content: center;
+}
+#HeroTitle a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroTitle *:hover{
+    color: #E89847;
+}
+#HeroTitle h1{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+}
+#HeroOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#HeroOptions a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroOptions * :hover{
+    color: #E89847;
+}
+#HeroOptions ul{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+}
+#HeroLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HeroLogin ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    margin: 0;
+}
+#HeroLogin ul li{
+    height: 100%;
+    margin: 0;
+}
+#HeroLogin a{
+    color: unset;
+    text-decoration: unset;
+}
+#HeroLogin * :hover{
+    color: #E89847;
+}
+#HeroCarrousel{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 110%;
+    overflow: hidden;
+}
+#HeroCarrousel img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#carouselExample{
+    padding: 0px;
+}
+@media (width<=600px) {
+    #Hero * {
+        border: #DA603E solid 1px;
+    }    
+}

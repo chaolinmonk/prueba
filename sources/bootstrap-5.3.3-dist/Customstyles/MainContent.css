@@ -1,0 +1,120 @@
+#MainContent{
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    position: absolute;
+    top: 110vh;
+    width: 80%;
+    height: 300vh,
+}
+#ArtistsCarousel-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+.ArtistsCarousel-bigtext{
+    position: relative;
+    color: #DA603E;
+    top: 5%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    height: fit-content;
+    width: 100%;
+}
+#ArtistsCarousel{
+    height: 90%;
+    width: 100%;
+}
+#ArtistsCarousel button{
+    width: 5%;
+}
+#ArtistsCarousel .carousel-inner {
+    height: 100%;
+}
+
+#ArtistsCarousel .carousel-item {
+    height: 100%;
+}
+
+#ArtistsCarousel .carousel-item > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Artist-pres{
+    width: 100%;
+}
+.Artists-Card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width:30%; 
+}
+.card{
+    border-radius: 0px;
+    border: 0px;
+    background-color: #F5F0EC;
+    height: 70%;
+}
+.card-img-top{
+    height: 80%;
+}
+
+.Artists-Card p{
+    font-style: italic;
+}
+.Artists-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+.Artists-detail-content{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 80%;
+    background-color: #F5F0EC;
+
+}
+.Artists-detail-content *{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Artists-detail-content h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #828C51;
+}
+.Artists-detail-content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: #DA603E;
+}
+.Artists-detail-content > a{
+    padding: 10px 20px;
+    width: fit-content;
+    color: #F5F0EC;
+    text-decoration: unset;
+    background-color: #DA603E;
+    transition:.5s;
+}
+.Artists-detail-content > a:hover{
+    color: #F5F0EC;
+    background-color: #aeaba8;
+}
+.Artists-detail-content > a:focus{
+    transition: .02s;
+    color: #fdfdfd;
+    background-color: #3b4e3c;
+}
