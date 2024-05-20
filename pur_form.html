@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container w-70 mt-5 rounded shadow">
+        <div class="text-end"><img src="img/logo.png" alt="" width="30%" height="10%"></div>
+        <div class="container w-50 text-center py-2">
+            Deja tus datos para contactarte y realizar la compra
+        </div>
+        <form action="" class="r">
+            <div class="row">
+                <div class="col-6">
+                    <label for="name" class="form-label"></label>
+                    <input type="text" class="form-control" name="name" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <label for="lastname" class="form-label"></label>
+                    <input type="text" class="form-control input-clr" name="lastname" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="email" class="form-label"></label>
+                    <input type="email" class="form-control input clr" name="mail" placeholder="Correo Electronico">
+                </div>
+                <div class="col-6">
+                    <label for="typeNumber" class="form-label"></label>
+                    <input type="tel" id="typeNumber" class="form-control" name="phone" placeholder="Numero de telefono">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="country" class="form-label"></label>
+                    <input type="text" class="form-control" name="country" placeholder="Pais">
+                </div>
+                <div class="col-6">
+                    <label for="city" class="form-label"></label>
+                    <input type="text" class="form-control input-clr" name="city" placeholder="Ciudad">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="address" class="form-label"></label>
+                    <input type="text" class="form-control" name="address" placeholder="direccion">
+                </div>
+                <div class="col-6">
+                    <label for="addressnum" class="form-label"></label>
+                    <input type="text" class="form-control input-clr" name="addressnum" placeholder="Numero / depto / block">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="comments" class="form-label"></label>
+                <input type="text" class="form-control" name="comments" placeholder="Comentarios">
+            </div>
+            <div class="text-center dm-2 py-4">
+                <button type="submit" class="btn btn-success">Enviar datos</button>
+        </form>
+        
+        </div>
+    </div>
+</body>
+</html>
