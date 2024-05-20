@@ -1,17 +1,11 @@
 $().ready(function () {
-    if (localStorage.getItem("users").length === 0 || localStorage.getItem("users") == null){
-        $.getJSON("auth/user.json", function(data){
-            localStorage.setItem("users", JSON.stringify(data.users))
-        });
-    }
-
     const LOCALUSER = JSON.parse(localStorage.getItem("users"));
     console.log(LOCALUSER);
     
     maxId = 1;
 
     for(var i = 0; i < LOCALUSER.length; i++){
-        id = LOCALUSER[i]["author_id"];
+        id = LOCALUSER[i]["id"];
         if(id > maxId){maxId = id};
     }
     
@@ -33,13 +27,18 @@ $().ready(function () {
                 let logged = {
                     logged: true,
                     mail: userMail,
-                    id: LOCALUSER[i]["author_id"]
+                    id: LOCALUSER[i]["id"]
                 }
                 localStorage.setItem('logged', JSON.stringify(logged));
             };
         }
         
-        if(JSON.parse(localStorage.getItem('logged'))["logged"]){alert('correcto')};
+
+        if(JSON.parse(localStorage.getItem('logged'))["logged"]){
+            alert('Sesión Iniciada')
+            window.location.href = "./usuario.html"
+        };
+        
     });
 
     //Register
@@ -48,39 +47,48 @@ $().ready(function () {
         var valiMail = false;
         var valiPass = false;
 
-        if (LOCALUSER) {
-            LOCALUSER.forEach(data => {
-                if (data.userMail.toLowerCase().includes($('#email').val().toLowerCase())) {
-                    alert('Correo ya registrado');
-                }
-            })
-        }else{
+        LOCALUSER.forEach(data => {
+            if (data.userMail.toLowerCase().includes($('#email').val().toLowerCase())) {
+                alert('Correo ya registrado');
+            }else{
             valiMail = true;
-        };
+            }});
         
-        if( $('#password').val() ===  $('#valPass').val()){
+        if( $('#password').val() === $('#valPass').val()){
             valiPass = true;
+            console.log("xd")
         }else{
             alert('Las contraseñas deben coincidir!!!')
         }
-
+        console.log(valiMail,valiPass)
         if(valiPass && valiMail){
             let newUser = {
-                author_id: maxId +1,
+                id: maxId +1,
                 name: ($('#name').val()).toLowerCase(),
                 lastName: ($('#lastname').val()).toLowerCase(),
                 userMail: ($('#email').val()).toLowerCase(),
                 passWord: $('#password').val(),
+                img: "defaultuser.jpg",
+                link: "artista.html",
+                desc: "Sin descripción"
             }
-            
             
             let userList = JSON.parse(localStorage.getItem("users"));
     
             userList.push(newUser);
             localStorage.setItem("users",JSON.stringify(userList))
-            console.log("Cuenta Creada con Exito")
+            alert("Cuenta Creada con Exito")
+            let logged = {
+                logged: true,
+                mail: ($('#email').val()).toLowerCase(),
+                id: maxId +1
+            }
+            localStorage.setItem('logged', JSON.stringify(logged));
+            if(JSON.parse(localStorage.getItem('logged'))["logged"]){
+                alert('Sesión Iniciada')
+                window.location.href = "./usuario.html"
+            };
         }
         
-
     });
 });

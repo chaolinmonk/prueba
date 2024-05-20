@@ -1,6 +1,6 @@
 // CheckArtist.js
 export function artHoverListener() {
-    $(".artcontainer-bigtext").on("mouseover", function() {
+    $(".artcontainer-bigtext").on("click", function() {
         var val = $(this).attr("name");
         console.log('Elemento:', this); // Mostrar el elemento en el que se detectó el evento
         console.log('data-id:', val);   // Mostrar el valor de data-id

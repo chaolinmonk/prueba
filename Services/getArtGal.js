@@ -3,7 +3,7 @@ import { artHoverListener } from "./CheckArtist.js";
 //#artcont
 export function display(search = "",type = "Obras", tarjet = "#artcont") {
     const obrasGuardadas = JSON.parse(localStorage.getItem('obras'));
-    const Artistas = JSON.parse(localStorage.getItem('autores'));
+    const Artistas = JSON.parse(localStorage.getItem('users'));
     var found = false;
     if(type === "Obras"){
         if (obrasGuardadas) {
@@ -22,9 +22,9 @@ export function display(search = "",type = "Obras", tarjet = "#artcont") {
     }else{
         if (Artistas) {
             Artistas.forEach(Artista => {
-                if (search === "" || Artista.autor_name.toLowerCase().includes(search.toLowerCase())) {
-                    $(tarjet).append(addArtCard(Artista.autor_id,Artista.autor_link, Artista.autor_img, Artista.autor_name, Artista.autor_desc));
-                    console.log(Artista.autor_name);
+                if (search === "" || Artista.name.toLowerCase().includes(search.toLowerCase())) {
+                    $(tarjet).append(addArtCard(Artista.id,Artista.link, Artista.img, Artista.name, Artista.desc));
+                    console.log(Artista.name);
                     found = true;
                 }
             });

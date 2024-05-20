@@ -58,6 +58,8 @@
     font-size: 500px;
 }
 #User-details-description{
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
     width: 80%;
     height: fit-content;

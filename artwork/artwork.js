@@ -2,15 +2,9 @@ $().ready(function(){
     if(JSON.parse(localStorage.getItem('logged'))['logged'] == false){
         alert('Debes iniciar sesion para ingresar un arte');
     }
-    const ARTWORK = localStorage.getItem("artwork");
+    const ARTWORK = localStorage.getItem("obras");
     var maxId = 1;
     const USERID = JSON.parse(localStorage.getItem('logged'))['id'];
-
-    if(ARTWORK === null){
-        $.getJSON("artwork/artwork.json", function(data){
-            localStorage.setItem("artwork", JSON.stringify(data.artwork))
-        });
-    }
 
     for(var i = 0; i < JSON.parse(ARTWORK).length; i++){
         id = JSON.parse(ARTWORK)[i]["id"];
@@ -24,31 +18,38 @@ $().ready(function(){
 
         let newArtwork = {
             id: maxId+1,
-            artworkName: $("#artworkName").val(),
-            imageUrl: $("input[type=file]").val().replace(/C:\\fakepath\\/i, ''),
+            name: $("#artworkName").val(),
+            likes: 0,
+            favorites:0,
+            link:"Artwork-1.html",
+            img: $("input[type=file]").val().replace(/C:\\fakepath\\/i, ''),
             precio: parseInt($("#precio").val()),
             historia: $("#historia").val(),
-            descripcion: $("#descripcion").val(),
-            tecUsada: $("#tecUsada").val(),
+            desc: $("#descripcion").val(),
+            tecnica: $("#tecUsada").val(),
             etiqueta: $("#etiqueta").val(),
-            artistaId: USERID
+            autor_id: USERID
         };
 
         Object.keys(newArtwork).forEach(function(key){
             if(newArtwork[key] === "" || newArtwork[key] === null) {
+                
                 valid = false
             }
         })
+        if(valid === false){
+            alert("Debe completar todos los campos");
+        }
         if(isNaN(newArtwork.precio)){
             alert('El precio debe contener solo numeros')
             valid = false;
         }
 
-        if(valid){
+        if(valid == true){
             let artworkList=JSON.parse(ARTWORK);
-    
+            console.log(newArtwork)
             artworkList.push(newArtwork);
-            localStorage.setItem("artwork", JSON.stringify(artworkList));
+            localStorage.setItem("obras", JSON.stringify(artworkList));
             alert("carga exitosa");
         }
     })

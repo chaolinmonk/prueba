@@ -8,7 +8,11 @@ const obras = [
         "favorites":0,
         "autor_id": 2,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
         "id" : 2,
@@ -19,7 +23,11 @@ const obras = [
         "favorites":0,
         "autor_id": 3,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
         "id" : 3,
@@ -30,7 +38,11 @@ const obras = [
         "favorites":0,
         "autor_id": 3,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
         "id" : 4,
@@ -41,10 +53,14 @@ const obras = [
         "favorites":0,
         "autor_id": 2,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
-        "id" : 4,
+        "id" : 5,
         "name": "escape from tarkov",
         "img": "ivan.jpg",
         "link": "Artwork-1.html",
@@ -52,10 +68,14 @@ const obras = [
         "favorites":0,
         "autor_id": 2,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
-        "id" : 4,
+        "id" : 6,
         "name": "escape from tarkov",
         "img": "IMG_1512-1024x848.jpeg",
         "link": "Artwork-1.html",
@@ -63,19 +83,28 @@ const obras = [
         "favorites":0,
         "autor_id": 1,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     },
     {
-        "id" : 4,
+        "id" : 7,
         "name": "escape from tarkov",
         "img": "minecraft_repainted_by_griffsnuff_d79wp4u-pre.jpg",
         "link": "Artwork-1.html",
         "likes": 0,
         "favorites":0,
-        "autor_id": 1,
+        "autor_id": 7,
         "desc":"lorem ipsum",
-        "fecha":"12/04/1999 18:39:00"
+        "fecha":"12/04/1999 18:39:00",
+        "precio":10000,
+        "tecnica":"Acuarela",
+        "historia":"erase",
+        "etiqueta":"Arte"
     }
 ]   
-
-localStorage.setItem('obras', JSON.stringify(obras));
+if(localStorage.getItem("obras") == null){
+    localStorage.setItem('obras', JSON.stringify(obras));
+}
