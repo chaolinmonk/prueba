@@ -6,7 +6,7 @@ export function addArtCard(id, link, img, title, desc) {
                 `<a href="../sources/IMG/${img}" name = ${id} class="artcontainer-bigtext">${title}</a>` +
                 `<p class="artcontainer-smalltext">${desc}</p>` +
             '</div>' +
-            `<img src="${img}" alt="Placeholder">` +
+            `<img src="../sources/IMG/${img}" alt="Placeholder">` +
             '</div>' +
         '</div>'
     );
