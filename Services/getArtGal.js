@@ -1,9 +1,10 @@
 import { addArtCard } from "../Components/Artcard.js";
 import { artHoverListener } from "./CheckArtist.js";
+import getArt from "./django/getart.js"
 //#artcont
 export function display(search = "",type = "Obras", tarjet = "#artcont") {
     console.log("fasil")
-    const obrasGuardadas = JSON.parse(localStorage.getItem('obras'));
+    const obrasGuardadas = getArt();
     const Artistas = JSON.parse(localStorage.getItem('users'));
     var found = false;
     if(type === "Obras"){

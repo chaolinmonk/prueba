@@ -91,7 +91,7 @@
     <section id="ArtGalery" class="container">
       <div class="Artsearch">
         <input class="Artsearch_input" type="text" placeholder="Escribe algo">
-        <button class = "Artsearch-btn" type="button">Buscar</button>
+        <button class = "Artsearch-btn" type="input" id="sbtn"> Buscar</button>
         <select class = "Artsearch-select" name="" id="">
           <option value="Obras">Obras</option>
           <option value="Artistas">Artistas</option>
@@ -186,16 +186,22 @@
     <script type="module" src="./Services/getArtGal.js"></script>
     <script type="module" src="./Services/Artsearch.js"></script>
   -->
+  <script type="module" src="./Services/django/navbar.js"></script>
   <script type="module" src="./Components/Herologin.js"></script>
   <script type="module" src="./Components/Hammenu.js"></script>
   <script type="module" src="./Services/test.js"></script>
-  <script src="./sources/Customjs/Navbar.js"></script>
+  <script src="./sources/Customjs/Navbar.js"></script>  
   <script src="./sources/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+  <script type="module" src="Services/django/ArtSearch.js"></script>
   <script type="module">
     import { showHamMenu,hideHamMenu } from './Components/Hammenu.js';
+    import {navbarx} from './Services/django/navbar.js';
+    import { openSession } from "./Services/django/opensesion.js";
     $(document).ready(function() {
         showHamMenu();
         hideHamMenu();
+        navbarx(openSession());
     });
   </script>
   <script type="module" src="./Services/django/getArtGalery.js"></script>

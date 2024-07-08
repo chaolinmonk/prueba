@@ -2,7 +2,6 @@ $(document).ready(()=>{
     $("#upload_form").click(()=>{
         console.log("hola baby")
         const newUser = {
-            "id":1000,
             "nom": $("#nom").val(),
             "ap_pat": $("#ap_pat").val(),
             "email": $("#email").val(),
