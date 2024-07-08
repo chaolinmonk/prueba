@@ -2,6 +2,7 @@ import { addArtCard } from "../Components/Artcard.js";
 import { artHoverListener } from "./CheckArtist.js";
 //#artcont
 export function display(search = "",type = "Obras", tarjet = "#artcont") {
+    console.log("fasil")
     const obrasGuardadas = JSON.parse(localStorage.getItem('obras'));
     const Artistas = JSON.parse(localStorage.getItem('users'));
     var found = false;

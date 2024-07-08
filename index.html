@@ -11,12 +11,23 @@
     <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/ArtGal.css">
     <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/QS.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./Data/Artwork.js"></script>
-    <script src="./Data/Artists.js"></script>
-    <script src="./Data/selection.js"></script>
+    <!--
+      <script src="./Data/Artwork.js"></script>
+      <script src="./Data/Artists.js"></script>
+      <script src="./Data/selection.js"></script>
+    ge-->
 </head>
 <body>
+  <div id="hammenucontent">
+    <ul>
+      <li><a href="#artcont">Obras</a></li>
+      <li><a href="#ArtistsCarousel-section">Artistas</a></li>
+      <li><a href="#presentacion">¿Quienes somos?</a></li>
+      <li><a href="upload_form.html">Crea</a></li>
+    </ul>
+  </div>
   <div id="Hero" class="containter">
+    
     <div id="Intro">
       <div id="IntroTitulo">Grupo <span>0</span></div>
     </div>
@@ -38,14 +49,24 @@
         </div>
         <div id="HeroOptions" class="col lg-4">
           <ul>
-            <li><a href="">Obras</a></li>
-            <li><a href="">Artistas</a></li>
-            <li><a href="">¿Quienes somos?</a></li>
+            <li><a href="#artcont">Obras</a></li>
+            <li><a href="#ArtistsCarousel-section">Artistas</a></li>
+            <li><a href="#presentacion">¿Quienes somos?</a></li>
             <li><a href="upload_form.html">Crea</a></li>
           </ul>
         </div>
         <div id="HeroLogin" class="col lg-4">
 
+        </div>
+        <div id="Hammenu">
+          <div id="Hambtn">
+            <button type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                <path d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button></div>
         </div>
     </div>
     <div id="HeroCarrousel" class="row">
@@ -161,11 +182,24 @@
     </section>
   </div>
   <script type="module" src="Services/CheckArtist.js"></script>
-  <script type="module" src="./Services/getArtGal.js"></script>
-  <script type="module" src="./Services/Artsearch.js"></script>
+  <!--
+    <script type="module" src="./Services/getArtGal.js"></script>
+    <script type="module" src="./Services/Artsearch.js"></script>
+  -->
   <script type="module" src="./Components/Herologin.js"></script>
+  <script type="module" src="./Components/Hammenu.js"></script>
+  <script type="module" src="./Services/test.js"></script>
   <script src="./sources/Customjs/Navbar.js"></script>
   <script src="./sources/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script type="module">
+    import { showHamMenu,hideHamMenu } from './Components/Hammenu.js';
+    $(document).ready(function() {
+        showHamMenu();
+        hideHamMenu();
+    });
+  </script>
+  <script type="module" src="./Services/django/getArtGalery.js"></script>
+
 </body>
 
 </html>
