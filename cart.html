@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/cart.css">
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/Navbar.css">
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/general.css">
+</head>
+<body>
+  <div id="cart-content">
+    <div id="cart-details">
+      <div class="item1">
+        <div class="title">
+          Mis Productos
+        </div>
+        <div id="cart-products">
+          <!--cart-card.js -->
+        </div>
+      </div>
+      <div class="item2">
+        <div class="title">
+          Carrito
+        </div>
+        <div id="options">
+          <div id="details">
+            <div class="det-rows">
+              <div>Obras</div>
+              <div id="counter">10</div>
+            </div>
+            <div class="det-rows">
+              <div>Descuentos</div>
+              <div id="desc">0%</div>
+            </div>
+            <div class="det-rows">
+              <div>Precio total</div>
+              <div>$ <span id="price"></span></div>
+            </div>
+          </div>
+          <button type="button" id="borrar">Quitar del carrito</button>
+          <button type="button" id="borrar">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./Services/django/openSesion.js"></script>
+  <script src="./Components/Navbar.js"></script>
+  <script src="./Components/cart-card.js"></script>
+  <script>
+    const valores = document.getElementsByClassName("vals");
+    const valoresSum = () => {
+        var sum = 0;
+        Array.from(valores).forEach(element => {
+            sum += parseInt(element.textContent);
+        });
+        return sum;
+    };
+
+    $(document).ready(() => {
+        $("#counter").text($("#cart-products").children().length);
+        console.log($("#cart-products"));
+        console.log("%/$%()")
+        $('#price').text(valoresSum())
+    });
+  </script>
+
+</body>
+</html>

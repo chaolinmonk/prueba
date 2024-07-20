@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistas</title>
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/general.css">
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/Navbar.css">
+  <link rel="stylesheet" href="./sources/bootstrap-5.3.3-dist/Customstyles/obras.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./Services/django/openSesion.js"></script>
+  <script src="./Components/Navbar.js"></script>
+</head>
+<body>
+  <div id="content">
+    <div id="ObrasTitle">
+      <h1>Artistas</h1>
+      <div class="imgcontainer">
+        <div class="overlay"></div>
+        <img src="sources/IMG/minecraft_repainted_by_griffsnuff_d79wp4u-pre.jpg" alt="">
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="buscador">
+      <div id="panel">
+        <input type="text">
+        <button type="button">Buscar</button>
+      </div>
+    </div>
+    <div class="results">
+      
+    </div>
+    <script src="Services/django/getArtGalery.js"></script>
+
+  </div>
+  
+
+</body>
+
+</html>

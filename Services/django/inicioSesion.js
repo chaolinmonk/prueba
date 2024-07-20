@@ -24,6 +24,7 @@ $(document).ready(() => {
                 localStorage.setItem('open', data.token) 
             })
             .catch(error => console.error('Error:', error));
-        window.location.href = "http://127.0.0.1:5500/artista.html";
+        //window.location.href = "http://127.0.0.1:5500/artista.html";
+        
     });
 });

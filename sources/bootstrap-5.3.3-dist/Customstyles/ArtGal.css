@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  font-family: "Roboto Mono", monospace;
+    text-decoration: none;
+    color: white;
+}
 #ArtGalery {
     display: flex;
     flex-direction: column;
@@ -28,8 +34,8 @@
     height: 500px;
     width: 20vw;
     min-width: 400px;
-    background-color: aquamarine;
     z-index: 1; 
+    border: #cacaca solid 1px;
 }
 .artcontainer-img{
     height: 100%;

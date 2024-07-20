@@ -1,4 +1,4 @@
-export function addArtCard(id, link, img, title, desc) {
+export function addArtCard(id, link, img, title, desc, element) {
     var artcard = $(
         '<div class="artcontainer">' +
             '<div class="artcontainer-img">' +
@@ -12,3 +12,4 @@ export function addArtCard(id, link, img, title, desc) {
     );
     return artcard;
 };
+

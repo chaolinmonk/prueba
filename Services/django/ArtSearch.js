@@ -9,5 +9,4 @@ $(document).ready(()=>{
         let filter = $(".Artsearch-select").val();
         getArtGalery(search,filter);
     })
-
 })

@@ -1,4 +1,4 @@
-export default function openSession (){    
+function openSession (){    
     if(localStorage.getItem("open") == null){
         localStorage.setItem('open', null);
         return false;

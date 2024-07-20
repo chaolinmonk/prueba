@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  font-family: "Roboto Mono", monospace;
+    color: white;
+}
 #img-artwork{
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    width: 100%;
+    width: 100vw;
     height: 600px;
     margin-bottom: 50px;
 }
@@ -30,7 +35,7 @@
 }
 #artworkdetails{
     padding: 50px;
-    background-color: #F5F0EC;
+    border: 1px solid white;
     min-width: 500px;
 }
 #artworkdetails p h2{
